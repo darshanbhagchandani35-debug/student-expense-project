@@ -1,42 +1,31 @@
 #include <stdio.h>
 
-int main()
-{
-    int choice;
+int main() {
+    float food, travel, study, other, total;
 
+    printf("===== STUDENT EXPENSE TRACKER =====\n\n");
 
-    printf("       STUDENT EXPENSE TRACKER\n");
+    printf("Enter Food expense: ");
+    scanf("%f", &food);
 
+    printf("Enter Travel expense: ");
+    scanf("%f", &travel);
 
-    printf("\n1. Add Expense");
-    printf("\n2. View Expenses");
-    printf("\n3. Calculate Total");
-    printf("\n4. Exit");
+    printf("Enter Study expense: ");
+    scanf("%f", &study);
 
-    printf("\n\nEnter your choice: ");
-    scanf("%d", &choice);
+    printf("Enter Other expense: ");
+    scanf("%f", &other);
 
-    switch(choice)
-    {
-        case 1:
-            printf("\nAdd Expense selected.\n");
-            break;
+    total = food + travel + study + other;
 
-        case 2:
-            printf("\nView Expenses selected.\n");
-            break;
-
-        case 3: 
-            printf("\nCalculate Total selected.\n");
-            break;
-
-        case 4:
-            printf("\nThank you!\n");
-            break;
-
-        default:
-            printf("\nInvalid choice.\n");
-    }
+    printf("\n===== EXPENSE SUMMARY =====\n");
+    printf("Food   : Rs. %.2f\n", food);
+    printf("Travel : Rs. %.2f\n", travel);
+    printf("Study  : Rs. %.2f\n", study);
+    printf("Other  : Rs. %.2f\n", other);
+    printf("---------------------------\n");
+    printf("Total  : Rs. %.2f\n", total);
 
     return 0;
 }
