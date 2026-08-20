@@ -1,4 +1,4 @@
-# 🎓 Student Expense Tracker
+# 🎓 Student Expense Tracker by D.H.Bhagchandani
 
 A simple, lightweight C application designed to help students track and manage their daily expenses through an interactive terminal interface.
 
